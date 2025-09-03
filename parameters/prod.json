@@ -1,0 +1,35 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environment": { "value": "prod" },
+    "location": { "value": "swedencentral" },
+    "tags": {
+      "value": {
+        "owner": "marcus",
+        "environment": "prod",
+        "costCenter": "labb2"
+      }
+    },
+
+    "storagePrefix": { "value": "marcusprodstg" },
+    "kvPrefix": { "value": "kv-marcus-prod" },
+    "appName": { "value": "app-marcusapp-prod" },
+    "aspName": { "value": "asp-marcusplan-prod" },
+
+    "skuName": { "value": "S1" },
+    "skuTier": { "value": "Standard" },
+
+    "secretName": { "value": "demo-secret" },
+
+    "enableProdAutoscale": { "value": true },
+    "autoscalePrefix": { "value": "auto-marcus-prod" },
+    "autoscaleMin": { "value": 1 },
+    "autoscaleMax": { "value": 3 },
+    "autoscaleDefaultCapacity": { "value": 1 },
+    "cpuThresholdScaleOut": { "value": 70 },
+    "cpuThresholdScaleIn": { "value": 30 },
+    "durationMinutes": { "value": 10 },
+    "cooldownMinutes": { "value": 5 }
+  }
+}
