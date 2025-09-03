@@ -32,5 +32,5 @@ az keyvault secret set --vault-name 'YourVaultName' --name 'SecretName' --value 
 Setting secret:
 
 
-Note: Due to policy of not being able to show account objectId, before setting secret:
+policys för secret..
 In azure portal of chosen keyvault -> Access policies -> Create -> Secret permissions Get, List, Set -> Principal Your account -> Create
